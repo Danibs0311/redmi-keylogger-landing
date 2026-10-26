@@ -1,0 +1,20 @@
+# Build folders
+app/build/
+build/
+.gradle/
+
+# Binaries
+*.apk
+*.aab
+
+# Local configuration
+local.properties
+.env
+dashboard/.env
+dashboard/node_modules/
+dashboard/dist/
+
+# IDE files
+.idea/
+*.iml
+.vscode/

